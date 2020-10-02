@@ -16,7 +16,7 @@ class DiffGrad(optimizer_v2.OptimizerV2):
                  name='DiffGrad',
                  **kwargs):
         super(DiffGrad, self).__init__(name, **kwargs)
-        self.version = version
+        # self.version = version
         self._set_hyper('learning_rate', kwargs.get('lr', learning_rate))
         self._set_hyper('decay', self._initial_decay)
         self._set_hyper('beta_1', beta_1)
